@@ -1,36 +1,74 @@
+*{margin:0}
 html{
     font-family: 'Helvetica', 'Arial', sans-serif;
-    /* display: table; */
+   
+    min-height: 100vh;
+    margin:0;
 }
-body{
-    /* display: table-cell; */
-    background-color:#003f5c ;
-    align-content: center;
-    align-items: center;
-    /* vertical-align: middle; */
-    margin: 0 auto;
+
+body {
+     display: flex;
     
+    flex-direction: column;
+    align-items:center;
+    background-color: #ffa600;
+justify-content: center;}
+
+.introduction, .skill-section, .feturedProjects, .messageMe {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
 }
+.mainHeader{
+    background-color:#bc5090;
+    height: 350px;
+    width:100%;
+    /* margin:0; */
+    /* margin: 10px; */
+}
+.skill-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skill {
+    flex: 1 1 calc(50% - 40px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.messageMe {
+    display: flex;
+    justify-content: center;
+}
+.messageMe form {
+    width: 100%;
+    max-width: 500px;
+}
+hr {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+main{
+    background-color:#003f5c;
+}
+
 .skill-section{
-    
-    align-self: center;
-    /* display: grid; */
-    /* grid-template-columns: 2fr 1fr 2fr; */
-    position: absolute;
-    align-self: center;
-    align-content: center;
     background-color:#58508d ;
     width: 1000px;
     height: fit-content;
 }
 .skill{
-    /* position: relative; */
+   
     background-color:#ff6361 ;
     box-shadow: 0px 4px 3px rgba(188, 80, 144,0.5);
     width: 50%;
     height: 200px;
     border-radius: 12px;
-    /* align-content: center; */
+    align-content: center;
     margin: 10px;
 }
 
