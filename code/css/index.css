@@ -1,0 +1,146 @@
+/* *{
+    margin:0
+}
+
+html{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #000000;
+    min-height: 100vh;
+    margin:0;
+}
+
+.mainHeader{
+    background-color:#000000;
+    height: 350px;
+    border: 2px solid #FFD700;
+    width:100%;
+    box-shadow:2px 3px 2px 1px rgb(255, 217, 0.5);
+    display: flex;
+    border-bottom-right-radius: 50px;
+
+}
+body {
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    align-items:center;
+    background-color:#FFD700;
+    justify-content: center;
+}
+
+.introduction, .skill-section, .feturedProjects, .messageMe {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.circleNav{
+    float:left;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 1px solid black;
+    box-shadow:0px 2px 12px #00fffb;
+    background-color: #ff0400;
+}
+
+
+.imageContainer{
+    height:300px;
+    width:300px;
+    align-items: center;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.profileImage{
+    height:300px;
+}
+
+.skill-section {
+    align-self:flex-start;
+    background-color:#00fffb ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    width: 100%;
+    border: 2px solid #808080;
+    border-end-end-radius: 30px;
+    
+}
+
+.skill {
+    flex: 1 1 45%; 
+    margin: 10px;
+    height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    text-align: center;
+    background-color:#ff0400 ;
+    box-shadow: 0px 4px 3px #ffcc00;
+    border-radius:50px;
+    flex-direction:column;
+    &p{
+        color:#0008ff
+    }
+}
+
+
+
+.messageMe {
+    display: flex;
+    justify-content: center;
+}
+
+.messageMe form {
+    width: 100%;
+    max-width: 500px;
+}
+
+hr {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+main{ 
+    display: flex;
+    width: 60%;
+    height: 200vh;
+    flex-direction: column;
+    align-items: center;
+    background-color:#0008ff;
+    margin-top: 4px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 30px;
+    color:#FFD700;
+    box-shadow:6px 6px 6px gray, -1em 1em 3em #ff0400;
+}
+.introduction{
+    margin-top:20px;
+}
+.circleNav:hover{
+    box-shadow: 1em 0 2em gold;
+}
+.skill:hover {
+    box-shadow: 3px 2px 3px black;
+}
+.skill-title{
+    align-self: flex-start;
+    font-style: italic;
+    width: 150px;
+    float:left;
+    background-color: black;
+    border-top-right-radius : 20px;
+    border-bottom-right-radius: 15px;
+    box-shadow:2px 2px 2px gold, -3px 2px 3px #ff0400;
+    
+} */
+/* colors i will use for this are  #003f5c,  #58508d,  #bc5090,  #ff6361 and  #ffa600*/
+/* link of the clor pallete from colorkit https://colorkit.co/palette/003f5c-58508d-bc5090-ff6361-ffa600/*/ 
+/*<a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by Freepik - Flaticon</a>*/

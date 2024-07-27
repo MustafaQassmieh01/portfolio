@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+}
+html{
+    display:flex;
+}
+aside{
+    align-self: flex-start;
+    width: 300px;
+
+
+}
+.image
