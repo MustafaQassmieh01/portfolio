@@ -22,3 +22,12 @@
 .card:has(.card-image) h3{margin-top:34px}
 @media(max-width:850px){.hero-portrait{height:68vw;min-height:420px}.card-image{height:260px;margin-left:0;margin-right:0}}
 @media(max-width:500px){.hero-portrait{height:105vw;min-height:0;margin-top:55px}.hero-portrait figcaption{left:16px;right:16px;bottom:15px}.hero-portrait figcaption b{display:none}.card-image{height:210px}}
+
+/* Kron product screens */
+.kron-gallery{height:190px;margin:28px -18px 0;display:flex;justify-content:center;gap:10px;overflow:hidden;background:#161c13;border:1px solid rgba(9,11,11,.35);padding:10px 10px 0}
+.kron-gallery img{height:245px;width:auto;display:block;filter:drop-shadow(0 9px 12px rgba(0,0,0,.3));transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.card:hover .kron-gallery img:first-child{transform:translateY(-5px) rotate(-1deg)}
+.card:hover .kron-gallery img:last-child{transform:translateY(-5px) rotate(1deg)}
+.card:has(.kron-gallery) h3{margin-top:34px}
+@media(max-width:850px){.kron-gallery{height:260px;margin-left:0;margin-right:0}.kron-gallery img{height:330px}}
+@media(max-width:500px){.kron-gallery{height:210px}.kron-gallery img{height:270px}}
