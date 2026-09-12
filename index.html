@@ -14,26 +14,32 @@
   <div class="noise" aria-hidden="true"></div>
   <header class="site-header">
     <a class="mark" href="#top" aria-label="Mustafa Qassmieh, home">MQ<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a>
+    <nav aria-label="Main navigation" data-i18n-aria="navLabel">
+      <a href="#work" data-i18n="navWork">Work</a><a href="#experience" data-i18n="navExperience">Experience</a><a href="#about" data-i18n="navAbout">About</a>
     </nav>
-    <a class="contact-pill" href="mailto:mustafa.qassmieh@gmail.com">Let’s talk <span>↗</span></a>
+    <div class="header-actions">
+      <div class="language-switch" role="group" aria-label="Language" data-i18n-aria="languageLabel">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="sv" aria-pressed="false">SV</button>
+      </div>
+      <a class="contact-pill" href="mailto:mustafa.qassmieh@gmail.com"><span data-i18n="contact">Let’s talk</span> <span>↗</span></a>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero wrap">
-      <div class="eyebrow"><i></i> Based in Sweden · Open to opportunities</div>
-      <h1>I build where<br><em>software meets reality.</em></h1>
+      <div class="eyebrow"><i></i> <span data-i18n="eyebrow">Based in Sweden · Open to opportunities</span></div>
+      <h1 data-i18n-html="heroTitle">I build where<br><em>software meets reality.</em></h1>
       <div class="hero-bottom">
-        <p>Software developer working across backend systems, embedded devices, networking and cybersecurity. I like taking ideas all the way from protocol and code to a working physical system.</p>
+        <p data-i18n="heroBody">Software developer working across backend systems, embedded devices, networking and cybersecurity. I like taking ideas all the way from protocol and code to a working physical system.</p>
         <div class="hero-links">
-          <a href="#work">Explore my work <span>↓</span></a>
+          <a href="#work"><span data-i18n="explore">Explore my work</span> <span>↓</span></a>
           <a href="https://github.com/MustafaQassmieh01" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
       </div>
       <figure class="hero-portrait">
         <img src="images/mustafa-portrait.png" alt="Mustafa Qassmieh overlooking Stockholm at sunset" />
-        <figcaption><span>STOCKHOLM · 2026</span><b>Software / Embedded / Security</b></figcaption>
+        <figcaption><span>STOCKHOLM · 2026</span><b data-i18n="portraitCaption">Software / Embedded / Security</b></figcaption>
       </figure>
       <div class="signal-map" aria-label="My engineering range: interface to backend to embedded hardware">
         <span>VOICE / UI</span><b></b><span>BACKEND</span><b></b><span>WIRELESS</span><b></b><span>HARDWARE</span>
@@ -42,19 +48,19 @@
     </section>
 
     <section class="stats wrap" aria-label="Quick facts">
-      <div><strong>4+</strong><span>years building software</span></div>
-      <div><strong>3</strong><span>systems domains</span></div>
-      <div><strong>01</strong><span>rule: make it work</span></div>
+      <div><strong>4+</strong><span data-i18n="statYears">years building software</span></div>
+      <div><strong>3</strong><span data-i18n="statDomains">systems domains</span></div>
+      <div><strong>01</strong><span data-i18n="statRule">rule: make it work</span></div>
     </section>
 
     <section class="work wrap" id="work">
-      <div class="section-heading"><span>01 / Selected work</span><h2>Built, tested,<br>and made real.</h2></div>
+      <div class="section-heading"><span data-i18n="workLabel">01 / Selected work</span><h2 data-i18n-html="workTitle">Built, tested,<br>and made real.</h2></div>
 
       <article class="project featured">
         <div class="project-copy">
-          <span class="project-no">01 — THESIS / EMBEDDED</span>
-          <h3>Voice-Controlled<br>Drone System</h3>
-          <p>An end-to-end command pipeline from a mobile voice interface through two ESP32 devices to an STM32 flight controller. Built with packet validation, CRSF, telemetry parsing, throttle smoothing and communication-loss failsafes.</p>
+          <span class="project-no" data-i18n="droneLabel">01 — THESIS / EMBEDDED</span>
+          <h3 data-i18n-html="droneTitle">Voice-Controlled<br>Drone System</h3>
+          <p data-i18n="droneBody">An end-to-end command pipeline from a mobile voice interface through two ESP32 devices to an STM32 flight controller. Built with packet validation, CRSF, telemetry parsing, throttle smoothing and communication-loss failsafes.</p>
           <div class="tags"><span>C/C++</span><span>ESP32</span><span>ESP-NOW</span><span>UART</span><span>CRSF</span><span>Betaflight</span></div>
         </div>
         <div class="drone-panel project-photo">
@@ -67,60 +73,60 @@
 
       <div class="project-grid">
         <article class="project card">
-          <span class="project-no">02 — DISTRIBUTED SYSTEMS</span>
+          <span class="project-no" data-i18n="smartLabel">02 — DISTRIBUTED SYSTEMS</span>
           <div class="card-image"><img src="images/smart-home-system.png" alt="Android smart-home app controlling the physical prototype" /></div>
-          <h3>Smart Home Control System</h3>
-          <p>A multi-client system connecting a Python TCP server, Android client and React dashboard through a Node.js WebSocket gateway, with SQLite persistence and NDJSON messaging.</p>
+          <h3 data-i18n="smartTitle">Smart Home Control System</h3>
+          <p data-i18n="smartBody">A multi-client system connecting a Python TCP server, Android client and React dashboard through a Node.js WebSocket gateway, with SQLite persistence and NDJSON messaging.</p>
           <div class="tags"><span>Python</span><span>Node.js</span><span>React</span><span>SQLite</span><span>TCP/IP</span></div>
         </article>
         <article class="project card accent">
-          <span class="project-no">03 — ANDROID / TEAM</span>
+          <span class="project-no" data-i18n="kronLabel">03 — ANDROID / TEAM</span>
           <div class="kron-gallery" aria-label="Kron schedule application screens">
             <img src="images/kron-schedule.png" alt="Kron schedule preview showing saved-schedule free-tier logic" />
             <img src="images/kron-universities.png" alt="Kron university selector supporting seven Swedish universities" />
           </div>
-          <h3>Kron Schedule App</h3>
-          <p>Production Android work in Kotlin across seven Swedish universities: persistent saved-schedule state, free-tier product logic, UI fixes and contributions delivered through pull requests and team review.</p>
+          <h3 data-i18n="kronTitle">Kron Schedule App</h3>
+          <p data-i18n="kronBody">Production Android work in Kotlin across seven Swedish universities: persistent saved-schedule state, free-tier product logic, UI fixes and contributions delivered through pull requests and team review.</p>
           <div class="tags"><span>Kotlin</span><span>Android</span><span>Git</span><span>Product logic</span></div>
         </article>
         <article class="project card">
-          <span class="project-no">04 — FULL STACK</span>
-          <h3>Course Registration Platform</h3>
-          <p>A full-stack enrollment platform with student applications, prerequisite checks and administrative workflows secured with JWT authentication.</p>
+          <span class="project-no" data-i18n="courseLabel">04 — FULL STACK</span>
+          <h3 data-i18n="courseTitle">Course Registration Platform</h3>
+          <p data-i18n="courseBody">A full-stack enrollment platform with student applications, prerequisite checks and administrative workflows secured with JWT authentication.</p>
           <div class="tags"><span>React</span><span>Express</span><span>MongoDB</span><span>REST</span><span>JWT</span></div>
         </article>
       </div>
     </section>
 
     <section class="experience wrap" id="experience">
-      <div class="section-heading"><span>02 / Experience</span><h2>Code, classrooms<br>and real deadlines.</h2></div>
+      <div class="section-heading"><span data-i18n="experienceLabel">02 / Experience</span><h2 data-i18n-html="experienceTitle">Code, classrooms<br>and real deadlines.</h2></div>
       <div class="timeline">
-        <article><time>2023 — NOW</time><div><h3>Teaching Assistant</h3><strong>Kristianstad University</strong><p>Supporting algorithms, data structures, Android and client/server systems. I debug code, guide industry-linked student teams and explain technical trade-offs to groups of 40+ students.</p></div></article>
-        <article><time>2023 — 2026</time><div><h3>Delivery Driver</h3><strong>Point Logistik</strong><p>Independent, time-critical night work across multiple routes—planning around fixed deadlines and resolving unexpected problems without losing pace or quality.</p></div></article>
+        <article><time data-i18n="taTime">2023 — NOW</time><div><h3 data-i18n="taTitle">Teaching Assistant</h3><strong data-i18n="university">Kristianstad University</strong><p data-i18n="taBody">Supporting algorithms, data structures, Android and client/server systems. I debug code, guide industry-linked student teams and explain technical trade-offs to groups of 40+ students.</p></div></article>
+        <article><time>2023 — 2026</time><div><h3 data-i18n="driverTitle">Delivery Driver</h3><strong>Point Logistik</strong><p data-i18n="driverBody">Independent, time-critical night work across multiple routes—planning around fixed deadlines and resolving unexpected problems without losing pace or quality.</p></div></article>
       </div>
     </section>
 
     <section class="about wrap" id="about">
       <div class="about-intro">
-        <span>03 / About</span>
-        <h2>I’m Mustafa.<br><em>Curiosity is the engine.</em></h2>
+        <span data-i18n="aboutLabel">03 / About</span>
+        <h2 data-i18n-html="aboutTitle">I’m Mustafa.<br><em>Curiosity is the engine.</em></h2>
       </div>
       <div class="about-body">
-        <p class="lead">I’m a Computer Science student nearing graduation, specializing in software engineering and now expanding into cybersecurity.</p>
-        <p>I’m most at home in the messy middle between disciplines: tracing a packet across services, reading telemetry from a flight controller, soldering a connection, or helping someone reason through a broken algorithm. I care about understanding the whole system—not just the file I’m editing.</p>
-        <p>Outside the terminal, I train, build electronics, 3D print parts, read Dostoyevsky and occasionally convince myself the next hardware idea will be “a quick weekend project.”</p>
+        <p class="lead" data-i18n="aboutLead">I’m a Computer Science student nearing graduation, specializing in software engineering and now expanding into cybersecurity.</p>
+        <p data-i18n="aboutBody">I’m most at home in the messy middle between disciplines: tracing a packet across services, reading telemetry from a flight controller, soldering a connection, or helping someone reason through a broken algorithm. I care about understanding the whole system—not just the file I’m editing.</p>
+        <p data-i18n="aboutPersonal">Outside the terminal, I train, build electronics, 3D print parts, read Dostoyevsky and occasionally convince myself the next hardware idea will be “a quick weekend project.”</p>
       </div>
       <div class="skills">
-        <div><span>LANGUAGES</span><p>JavaScript / TypeScript<br>Python · Kotlin · C/C++</p></div>
-        <div><span>SYSTEMS</span><p>Linux · TCP/IP · WebSockets<br>REST · Distributed systems</p></div>
-        <div><span>HARDWARE</span><p>ESP32 · UART · Sensors<br>RF · Soldering · 3D printing</p></div>
-        <div><span>DATABASES</span><p>SQLite · MySQL<br>MongoDB</p></div>
+        <div><span data-i18n="languages">LANGUAGES</span><p>JavaScript / TypeScript<br>Python · Kotlin · C/C++</p></div>
+        <div><span data-i18n="systems">SYSTEMS</span><p data-i18n-html="systemsList">Linux · TCP/IP · WebSockets<br>REST · Distributed systems</p></div>
+        <div><span data-i18n="hardware">HARDWARE</span><p data-i18n-html="hardwareList">ESP32 · UART · Sensors<br>RF · Soldering · 3D printing</p></div>
+        <div><span data-i18n="databases">DATABASES</span><p>SQLite · MySQL<br>MongoDB</p></div>
       </div>
     </section>
   </main>
 
   <footer class="wrap">
-    <div><span>Have a difficult problem?</span><a href="mailto:mustafa.qassmieh@gmail.com">Let’s build the solution. ↗</a></div>
+    <div><span data-i18n="footerPrompt">Have a difficult problem?</span><a href="mailto:mustafa.qassmieh@gmail.com" data-i18n="footerCta">Let’s build the solution. ↗</a></div>
     <div class="footer-links"><a href="https://github.com/MustafaQassmieh01" target="_blank" rel="noreferrer">GitHub</a><a href="https://linkedin.com/in/mustafa-qassmieh-0b0397238" target="_blank" rel="noreferrer">LinkedIn</a></div>
     <small>© <span id="year"></span> Mustafa Qassmieh</small>
   </footer>

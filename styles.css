@@ -31,3 +31,13 @@
 .card:has(.kron-gallery) h3{margin-top:34px}
 @media(max-width:850px){.kron-gallery{height:260px;margin-left:0;margin-right:0}.kron-gallery img{height:330px}}
 @media(max-width:500px){.kron-gallery{height:210px}.kron-gallery img{height:270px}}
+
+/* Language selection */
+.header-actions{display:flex;align-items:center;gap:12px}
+.language-switch{display:flex;border:1px solid var(--line);padding:3px;background:var(--panel)}
+.language-switch button{min-width:36px;border:0;background:transparent;color:var(--muted);padding:7px 8px;cursor:pointer;font:700 11px var(--mono);letter-spacing:.06em}
+.language-switch button:hover{color:var(--ink)}
+.language-switch button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.language-switch button:focus-visible{outline:2px solid var(--acid);outline-offset:2px}
+.contact-pill [data-i18n]{margin-left:0}
+@media(max-width:620px){.site-header{height:76px}.header-actions{gap:7px}.language-switch button{min-width:31px;padding:6px 5px}.contact-pill{font-size:0}.contact-pill>span:last-child{display:inline;font-size:13px;margin-left:0}}
