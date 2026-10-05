@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Mustafa Qassmieh — software developer building backend, embedded and connected systems." />
+  <meta name="description" content="Mustafa Qassmieh — software developer building backend, embedded, connected and cybersecurity systems." />
+  <meta property="og:title" content="Mustafa Qassmieh — Software & Embedded Systems" />
+  <meta property="og:description" content="Backend, embedded, Android and cybersecurity projects built from protocol to working hardware." />
+  <meta property="og:url" content="https://mustafaqassmieh.com/" />
+  <meta property="og:type" content="website" />
   <title>Mustafa Qassmieh — Software & Embedded Systems</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,9 +62,9 @@
 
       <article class="project featured">
         <div class="project-copy">
-          <span class="project-no" data-i18n="droneLabel">01 — THESIS / EMBEDDED</span>
+          <span class="project-no" data-i18n="droneLabel">01 — COMPLETED BSC THESIS / EMBEDDED</span>
           <h3 data-i18n-html="droneTitle">Voice-Controlled<br>Drone System</h3>
-          <p data-i18n="droneBody">An end-to-end command pipeline from a mobile voice interface through two ESP32 devices to an STM32 flight controller. Built with packet validation, CRSF, telemetry parsing, throttle smoothing and communication-loss failsafes.</p>
+          <p data-i18n="droneBody">Completed BSc thesis: Design and Evaluation of a Modular Voice-Controlled UAV System for Real-Time Operation. The system carries commands from a mobile voice interface through two ESP32 devices to an STM32 flight controller, with validation, CRSF telemetry and layered failsafes.</p>
           <div class="tags"><span>C/C++</span><span>ESP32</span><span>ESP-NOW</span><span>UART</span><span>CRSF</span><span>Betaflight</span></div>
         </div>
         <div class="drone-panel project-photo">
@@ -71,16 +75,30 @@
         </div>
       </article>
 
+      <article class="project mq-feature">
+        <div class="mq-photo">
+          <img src="images/mq-lab-collage.jpg" alt="MQ-Lab ESP32 touchscreen prototype running Wi-Fi and BLE scanners" />
+          <span>ESP32 · 320 × 240 · TOUCH</span>
+        </div>
+        <div class="project-copy">
+          <span class="project-no" data-i18n="mqLabel">02 — EMBEDDED TOOLING / OPEN SOURCE</span>
+          <h3 data-i18n="mqTitle">MQ-Lab ESP32 Toolkit</h3>
+          <p data-i18n="mqBody">A portable touchscreen toolkit built around an ESP32-D0WD-V3. I brought up the SPI display and resistive touch interface, calibrated raw input, investigated firmware flash limits and added a board target to an open-source repository. Working modules include Wi-Fi and BLE scanning.</p>
+          <div class="tags"><span>ESP32</span><span>PlatformIO</span><span>C++</span><span>SPI</span><span>Wi-Fi</span><span>BLE</span></div>
+          <a class="project-link" href="https://github.com/MustafaQassmieh01/esp32E-tool" target="_blank" rel="noreferrer"><span data-i18n="viewRepo">View repository</span> ↗</a>
+        </div>
+      </article>
+
       <div class="project-grid">
         <article class="project card">
-          <span class="project-no" data-i18n="smartLabel">02 — DISTRIBUTED SYSTEMS</span>
+          <span class="project-no" data-i18n="smartLabel">03 — DISTRIBUTED SYSTEMS</span>
           <div class="card-image"><img src="images/smart-home-system.png" alt="Android smart-home app controlling the physical prototype" /></div>
           <h3 data-i18n="smartTitle">Smart Home Control System</h3>
           <p data-i18n="smartBody">A multi-client system connecting a Python TCP server, Android client and React dashboard through a Node.js WebSocket gateway, with SQLite persistence and NDJSON messaging.</p>
           <div class="tags"><span>Python</span><span>Node.js</span><span>React</span><span>SQLite</span><span>TCP/IP</span></div>
         </article>
         <article class="project card accent">
-          <span class="project-no" data-i18n="kronLabel">03 — ANDROID / TEAM</span>
+          <span class="project-no" data-i18n="kronLabel">04 — ANDROID / TEAM</span>
           <div class="kron-gallery" aria-label="Kron schedule application screens">
             <img src="images/kron-schedule.png" alt="Kron schedule preview showing saved-schedule free-tier logic" />
             <img src="images/kron-universities.png" alt="Kron university selector supporting seven Swedish universities" />
@@ -90,7 +108,13 @@
           <div class="tags"><span>Kotlin</span><span>Android</span><span>Git</span><span>Product logic</span></div>
         </article>
         <article class="project card">
-          <span class="project-no" data-i18n="courseLabel">04 — FULL STACK</span>
+          <span class="project-no" data-i18n="mlLabel">05 — MACHINE LEARNING</span>
+          <h3 data-i18n="mlTitle">Flight Price Prediction</h3>
+          <p data-i18n="mlBody">A regression study comparing Linear Regression and Random Forest models on flight-pricing data, including preprocessing, feature analysis and a date-based train/test evaluation to check performance on future-like data.</p>
+          <div class="tags"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>Regression</span></div>
+        </article>
+        <article class="project card">
+          <span class="project-no" data-i18n="courseLabel">06 — FULL STACK</span>
           <h3 data-i18n="courseTitle">Course Registration Platform</h3>
           <p data-i18n="courseBody">A full-stack enrollment platform with student applications, prerequisite checks and administrative workflows secured with JWT authentication.</p>
           <div class="tags"><span>React</span><span>Express</span><span>MongoDB</span><span>REST</span><span>JWT</span></div>
@@ -102,6 +126,7 @@
       <div class="section-heading"><span data-i18n="experienceLabel">02 / Experience</span><h2 data-i18n-html="experienceTitle">Code, classrooms<br>and real deadlines.</h2></div>
       <div class="timeline">
         <article><time data-i18n="taTime">2023 — NOW</time><div><h3 data-i18n="taTitle">Teaching Assistant</h3><strong data-i18n="university">Kristianstad University</strong><p data-i18n="taBody">Supporting algorithms, data structures, Android and client/server systems. I debug code, guide industry-linked student teams and explain technical trade-offs to groups of 40+ students.</p></div></article>
+        <article><time data-i18n="internTime">INTERNSHIP</time><div><h3 data-i18n="internTitle">Bluetooth Data Logger Application</h3><strong data-i18n="internType">Software Development Internship</strong><p data-i18n="internBody">Developed an application for receiving, presenting and working with data from Bluetooth-connected hardware, translating device communication into a usable software workflow.</p></div></article>
         <article><time>2023 — 2026</time><div><h3 data-i18n="driverTitle">Delivery Driver</h3><strong>Point Logistik</strong><p data-i18n="driverBody">Independent, time-critical night work across multiple routes—planning around fixed deadlines and resolving unexpected problems without losing pace or quality.</p></div></article>
       </div>
     </section>
@@ -112,7 +137,7 @@
         <h2 data-i18n-html="aboutTitle">I’m Mustafa.<br><em>Curiosity is the engine.</em></h2>
       </div>
       <div class="about-body">
-        <p class="lead" data-i18n="aboutLead">I’m a Computer Science student nearing graduation, specializing in software engineering and now expanding into cybersecurity.</p>
+        <p class="lead" data-i18n="aboutLead">I’ve completed my Computer Science thesis and am finalizing my degree, with a focus on software engineering, embedded systems and cybersecurity.</p>
         <p data-i18n="aboutBody">I’m most at home in the messy middle between disciplines: tracing a packet across services, reading telemetry from a flight controller, soldering a connection, or helping someone reason through a broken algorithm. I care about understanding the whole system—not just the file I’m editing.</p>
         <p data-i18n="aboutPersonal">Outside the terminal, I train, build electronics, 3D print parts, read Dostoyevsky and occasionally convince myself the next hardware idea will be “a quick weekend project.”</p>
       </div>
