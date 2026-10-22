@@ -8,13 +8,17 @@
   <meta property="og:description" content="Backend, embedded, Android and cybersecurity projects built from protocol to working hardware." />
   <meta property="og:url" content="https://mustafaqassmieh.com/" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://mustafaqassmieh.com/images/mustafa-portrait.png" />
+  <meta name="theme-color" content="#080b0a" />
   <title>Mustafa Qassmieh — Software & Embedded Systems</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080b0a'/%3E%3Ctext x='10' y='43' font-family='monospace' font-weight='700' font-size='30' fill='%23edf0e8'%3EMQ%3C/text%3E%3Ccircle cx='53' cy='43' r='4' fill='%23c7ff3f'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <div class="noise" aria-hidden="true"></div>
   <header class="site-header">
     <a class="mark" href="#top" aria-label="Mustafa Qassmieh, home">MQ<span>.</span></a>
@@ -40,6 +44,12 @@
           <a href="#work"><span data-i18n="explore">Explore my work</span> <span>↓</span></a>
           <a href="https://github.com/MustafaQassmieh01" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
+      </div>
+      <div class="hero-status" aria-label="Current focus">
+        <span class="status-dot"></span>
+        <span data-i18n="currentLabel">CURRENTLY</span>
+        <strong data-i18n="currentValue">Building embedded tools and looking for the next engineering challenge.</strong>
+        <span class="status-code">SE · 56.0° N</span>
       </div>
       <figure class="hero-portrait">
         <img src="images/mustafa-portrait.png" alt="Mustafa Qassmieh overlooking Stockholm at sunset" />
@@ -109,12 +119,20 @@
         </article>
         <article class="project card">
           <span class="project-no" data-i18n="mlLabel">05 — MACHINE LEARNING</span>
+          <div class="data-visual" aria-hidden="true">
+            <div class="chart-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="chart-path"></div>
+            <span>TRAIN</span><span>TEST</span><strong>RANDOM FOREST</strong>
+          </div>
           <h3 data-i18n="mlTitle">Flight Price Prediction</h3>
           <p data-i18n="mlBody">A regression study comparing Linear Regression and Random Forest models on flight-pricing data, including preprocessing, feature analysis and a date-based train/test evaluation to check performance on future-like data.</p>
           <div class="tags"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>Regression</span></div>
         </article>
         <article class="project card">
           <span class="project-no" data-i18n="courseLabel">06 — FULL STACK</span>
+          <div class="stack-visual" aria-hidden="true">
+            <div><span>REACT</span><small>CLIENT</small></div><b>→</b><div><span>EXPRESS</span><small>API</small></div><b>→</b><div><span>MONGO</span><small>DATA</small></div>
+          </div>
           <h3 data-i18n="courseTitle">Course Registration Platform</h3>
           <p data-i18n="courseBody">A full-stack enrollment platform with student applications, prerequisite checks and administrative workflows secured with JWT authentication.</p>
           <div class="tags"><span>React</span><span>Express</span><span>MongoDB</span><span>REST</span><span>JWT</span></div>

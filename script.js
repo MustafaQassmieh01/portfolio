@@ -6,6 +6,7 @@ const translations = {
     eyebrow: 'Based in Sweden · Open to opportunities', heroTitle: 'I build where<br><em>software meets reality.</em>',
     heroBody: 'Software developer working across backend systems, embedded devices, networking and cybersecurity. I like taking ideas all the way from protocol and code to a working physical system.',
     explore: 'Explore my work', portraitCaption: 'Software / Embedded / Security',
+    currentLabel: 'CURRENTLY', currentValue: 'Building embedded tools and looking for the next engineering challenge.',
     statYears: 'years building software', statDomains: 'systems domains', statRule: 'rule: make it work',
     workLabel: '01 / Selected work', workTitle: 'Built, tested,<br>and made real.',
     droneLabel: '01 — COMPLETED BSC THESIS / EMBEDDED', droneTitle: 'Voice-Controlled<br>Drone System',
@@ -43,6 +44,7 @@ const translations = {
     eyebrow: 'Baserad i Sverige · Öppen för möjligheter', heroTitle: 'Jag bygger där<br><em>mjukvara möter verkligheten.</em>',
     heroBody: 'Mjukvaruutvecklare med fokus på backendsystem, inbyggda enheter, nätverk och cybersäkerhet. Jag gillar att ta idéer hela vägen från protokoll och kod till ett fungerande fysiskt system.',
     explore: 'Se mina projekt', portraitCaption: 'Mjukvara / Inbyggda system / Säkerhet',
+    currentLabel: 'JUST NU', currentValue: 'Bygger verktyg för inbyggda system och söker nästa tekniska utmaning.',
     statYears: 'år av mjukvaruutveckling', statDomains: 'systemområden', statRule: 'regel: få det att fungera',
     workLabel: '01 / Utvalda projekt', workTitle: 'Byggt, testat<br>och förverkligat.',
     droneLabel: '01 — AVSLUTAT EXAMENSARBETE / INBYGGDA SYSTEM', droneTitle: 'Röststyrt<br>drönarsystem',
@@ -98,6 +100,15 @@ setLanguage(initialLanguage);
 languageButtons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+const progressBar = document.querySelector('.scroll-progress span');
+function updateScrollProgress() {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
+  progressBar.style.transform = `scaleX(${Math.min(1, Math.max(0, progress))})`;
+}
+window.addEventListener('scroll', updateScrollProgress, { passive: true });
+updateScrollProgress();
 
 const reveal = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
