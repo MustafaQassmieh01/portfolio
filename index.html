@@ -23,7 +23,7 @@
   <header class="site-header">
     <a class="mark" href="#top" aria-label="Mustafa Qassmieh, home">MQ<span>.</span></a>
     <nav aria-label="Main navigation" data-i18n-aria="navLabel">
-      <a href="#work" data-i18n="navWork">Work</a><a href="#experience" data-i18n="navExperience">Experience</a><a href="#about" data-i18n="navAbout">About</a>
+      <a href="#work" data-i18n="navWork">Work</a><a href="#now" data-i18n="navNow">Now</a><a href="#experience" data-i18n="navExperience">Experience</a><a href="#about" data-i18n="navAbout">About</a>
     </nav>
     <div class="header-actions">
       <div class="language-switch" role="group" aria-label="Language" data-i18n-aria="languageLabel">
@@ -48,7 +48,7 @@
       <div class="hero-status" aria-label="Current focus">
         <span class="status-dot"></span>
         <span data-i18n="currentLabel">CURRENTLY</span>
-        <strong data-i18n="currentValue">Building embedded tools and looking for the next engineering challenge.</strong>
+        <strong data-i18n="currentValue">Building an Android planning system, a crisis simulator and multi-device Bluetooth tooling.</strong>
         <span class="status-code">SE · 56.0° N</span>
       </div>
       <figure class="hero-portrait">
@@ -140,8 +140,51 @@
       </div>
     </section>
 
+    <section class="now-building wrap" id="now">
+      <div class="section-heading">
+        <span data-i18n="nowLabel">02 / In progress</span>
+        <h2 data-i18n-html="nowTitle">What I’m building<br>right now.</h2>
+      </div>
+      <div class="now-grid">
+        <article class="now-card now-featured">
+          <div class="now-top"><span class="live-badge"><i></i><span data-i18n="activeBuild">ACTIVE BUILD</span></span><span>ANDROID / PRODUCTIVITY</span></div>
+          <div class="planner-visual" aria-hidden="true">
+            <div class="phone-shell"><div class="phone-head"><b>MOMENTUM</b><span>22 OCT</span></div><div class="plan-row done"><i></i><span>ML PROJECT</span><b>09:00</b></div><div class="plan-row"><i></i><span>GYM</span><b>14:30</b></div><div class="plan-row"><i></i><span>BUILD</span><b>18:00</b></div><div class="goal-line"><span></span><strong>67%</strong></div></div>
+          </div>
+          <h3 data-i18n="momentumTitle">Momentum Android Planner</h3>
+          <p data-i18n="momentumBody">A project-aware daily planner that turns long-term goals, deadlines and recurring responsibilities into realistic daily work. The current Android build supports multiple projects and tasks; automatic scheduling, deadline recognition, accessibility and cloud sync are being developed next.</p>
+          <div class="tags"><span>Kotlin</span><span>Android</span><span>Planning logic</span><span>Widgets</span></div>
+        </article>
+
+        <article class="now-card">
+          <div class="now-top"><span class="live-badge"><i></i><span data-i18n="researching">RESEARCHING</span></span><span>ML / DATA</span></div>
+          <div class="crisis-visual" aria-hidden="true"><div class="crisis-grid"></div><span class="crisis-line a"></span><span class="crisis-line b"></span><b>14D</b><strong>MAE 6.48</strong><small>HEALTH OUTCOME FORECAST</small></div>
+          <h3 data-i18n="crisisTitle">Action-Conditioned Crisis Simulator</h3>
+          <p data-i18n="crisisBody">An ML research project exploring how crisis outcomes change under different interventions. The health forecasting notebook and multi-source data audit are complete; the broader simulator will connect public-health, economic, climate and conflict datasets while clearly separating prediction from causal claims.</p>
+          <div class="tags"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>Jupyter</span></div>
+        </article>
+
+        <article class="now-card">
+          <div class="now-top"><span class="live-badge"><i></i><span data-i18n="testing">TESTING</span></span><span>ANDROID / BLUETOOTH</span></div>
+          <div class="network-visual" aria-hidden="true"><div class="master-node">MASTER</div><span></span><div class="slave-node">SLAVE 01<small>STREAM</small></div><span></span><div class="slave-node">SLAVE 02<small>READY</small></div></div>
+          <h3 data-i18n="loggerTitle">Multi-Device Data Logger</h3>
+          <p data-i18n="loggerBody">An Android-only master/slave data-logging system. The current branch manages two independent slave connections with per-device controls, readings and logs plus handshake validation and timeouts. Hardware testing, sensor transmission, request IDs and group commands are next.</p>
+          <div class="tags"><span>Kotlin</span><span>Bluetooth</span><span>Protocol design</span><span>Android</span></div>
+          <a class="now-link" href="https://github.com/MustafaQassmieh01/DataLoggerApp" target="_blank" rel="noreferrer"><span data-i18n="viewRepo">View repository</span> ↗</a>
+        </article>
+
+        <article class="now-card">
+          <div class="now-top"><span class="live-badge"><i></i><span data-i18n="prototyping">PROTOTYPING</span></span><span>EMBEDDED / DISPLAY</span></div>
+          <div class="matrix-visual" aria-hidden="true"><div></div><div></div><div></div><div></div><span>64 × 64</span><b>HUB75</b></div>
+          <h3 data-i18n="matrixTitle">Modular LED Matrix Controller</h3>
+          <p data-i18n="matrixBody">A four-panel 192 × 192 mm HUB75 display system driven by an ESP32 controller with a touchscreen interface. The build covers power distribution, level shifting, fused wiring, enclosure planning and a control workflow designed for animations and custom content.</p>
+          <div class="tags"><span>ESP32</span><span>HUB75</span><span>Power systems</span><span>Touch UI</span></div>
+        </article>
+      </div>
+    </section>
+
     <section class="experience wrap" id="experience">
-      <div class="section-heading"><span data-i18n="experienceLabel">02 / Experience</span><h2 data-i18n-html="experienceTitle">Code, classrooms<br>and real deadlines.</h2></div>
+      <div class="section-heading"><span data-i18n="experienceLabel">03 / Experience</span><h2 data-i18n-html="experienceTitle">Code, classrooms<br>and real deadlines.</h2></div>
       <div class="timeline">
         <article><time data-i18n="taTime">2023 — NOW</time><div><h3 data-i18n="taTitle">Teaching Assistant</h3><strong data-i18n="university">Kristianstad University</strong><p data-i18n="taBody">Supporting algorithms, data structures, Android and client/server systems. I debug code, guide industry-linked student teams and explain technical trade-offs to groups of 40+ students.</p></div></article>
         <article><time data-i18n="internTime">INTERNSHIP</time><div><h3 data-i18n="internTitle">Bluetooth Data Logger Application</h3><strong data-i18n="internType">Software Development Internship</strong><p data-i18n="internBody">Developed an application for receiving, presenting and working with data from Bluetooth-connected hardware, translating device communication into a usable software workflow.</p></div></article>
@@ -151,7 +194,7 @@
 
     <section class="about wrap" id="about">
       <div class="about-intro">
-        <span data-i18n="aboutLabel">03 / About</span>
+        <span data-i18n="aboutLabel">04 / About</span>
         <h2 data-i18n-html="aboutTitle">I’m Mustafa.<br><em>Curiosity is the engine.</em></h2>
       </div>
       <div class="about-body">
